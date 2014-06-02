@@ -1,20 +1,3 @@
-controller
-==========
-
-Just the C in MVC (Supports HMVC).
-
-Ok, so I started this repository to explain how I'm doing HMVC with the standard libary without reflection, without taking control of your middleware etc. 
-
-## Getting Started
-From your GOPATH:
-
-```bash
-go get github.com/d2g/controller
-```
-
-Add a file ```server.go``` - for instance, ```src/myapp/server.go```
-
-```go
 package main
 
 import (
@@ -83,10 +66,3 @@ func main() {
 
 	http.ListenAndServe("localhost:3000", exampleControllers.Routes())
 }
-```
-
-Run the server. It will be available on ```localhost:3000```:
-
-```bash
-go run src/myapp/server.go
-```
